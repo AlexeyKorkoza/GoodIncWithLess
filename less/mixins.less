@@ -12,8 +12,20 @@
   display:@style;
 }
 
-.border(@width: 1px, @type: solid, @color: #bbb, @direction: top){
-border-(@direction):@arguments;
+.border-left(@width: 1px, @type: solid, @color: #bbb){
+border-left:@width @type @color;
+}
+
+.border-top(@width: 1px, @type: solid, @color: #bbb){
+  border-top:@width @type @color;
+}
+
+.border-right(@width: 1px, @type: solid, @color: #bbb){
+  border-right:@width @type @color;
+}
+
+.border-bottom(@width: 1px, @type: solid, @color: #bbb){
+  border-bottom:@width @type @color;
 }
 
 .font(@font-size:8pt;@fontFamily: Arial;) {
