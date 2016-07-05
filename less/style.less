@@ -1,0 +1,107 @@
+@import "variables.less";
+@import "mixins.less";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: @background-main;
+}
+
+.header-switches a {
+  text-decoration: @text-decoration;
+  .display(block);
+  .rotate;
+}
+
+header {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: #373737;
+}
+
+.top-header-logo-inputs {
+  height: auto;
+  overflow: hidden;
+
+  p {
+    .font(14pt, @NexaFreeLightwebfont);
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 60%;
+  }
+}
+
+.logo {
+  height: 67px;
+  width: 78px;
+  background: #f26c4f;
+  float: left;
+  color: white;
+  .font(30pt, @NexaFreeBoldwebfont);
+  text-align: center;
+  margin-left: 10px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  .border-top(11px, solid, transparent);
+  .border-bottom(13px, solid, transparent);
+  .border-left(16px, solid, #fa6c4f);
+  float: left;
+  position: relative;
+  top: 18px;
+  margin-right: 7px;
+}
+
+.contact-letter {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.contact {
+  .display(inline-block);
+  margin: 10px 0 0 10px;
+}
+
+#contact {
+  .font(10pt, @NexaFreeBoldwebfont);
+  padding-left: 35px;
+  height: 35px;
+  border: none;
+  color: #bfbfbf;
+  background: white url(../img/clock.png) @background-repeat 15px;
+  width: 60px;
+}
+
+.letter {
+  &:extend(.contact);
+}
+
+#letter {
+  &:extend(#contact);
+  background: white url(../img/letter.png) @background-repeat 15px;
+  width: 80px;
+}
+
+.header-switches {
+  background: @background-main;
+  float: right;
+  padding: 0 15px;
+  height: 37px;
+
+  a {
+    color: #959595;
+    .font(8pt, @QuicksandBold);
+
+    &:first-of-type {
+      margin-top: 9px;
+    }
+
+    &:last-of-type {
+      margin-top: -5px;
+    }
+  }
+}
