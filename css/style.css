@@ -337,3 +337,115 @@ header {
 .socials ul li:last-of-type:extend, .socials ul li:nth-of-type(2), .socials ul li:nth-of-type(3) {
   margin-left: 22px
 }
+
+.feature {
+  margin-top: 10px;
+  height: auto;
+  overflow: hidden
+}
+
+.feature-image {
+  background: url(../img/image.png) no-repeat;
+  width: 100%;
+  height: 390px;
+  position: relative
+}
+
+.feature-image div {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  background: url(../img/fon.png) no-repeat;
+  padding: 25px 35px 26px 30px;
+  color: #fff;
+  font: 11pt NexaFreeLightwebfont
+}
+
+.triangle-right1 {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #f26c4f;
+  border-bottom: 15px solid transparent;
+  float: left;
+  position: relative;
+  top: 5px
+}
+
+.feature-text {
+  background: #373737;
+  width: 97%;
+  height: 300px;
+  border-left: 10px solid #f26c4f;
+  position: relative;
+  padding: 30px 0 0
+}
+
+.feature-text h2 {
+  font: 14pt NexaFreeLightwebfont;
+  color: #fff;
+  margin: 0 45px 0 40px
+}
+
+.feature-text p {
+  font: 9pt Arial-Regular;
+  color: #8e8e8e;
+  line-height: 22px;
+  margin: 20px 45px 0 40px
+}
+
+.plus-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 20px
+}
+
+.plus {
+  margin: 0 5px 0 37px
+}
+
+.plus a {
+  font: 33pt NexaFreeLightwebfont;
+  color: #fff;
+  text-decoration: none
+}
+
+.date1 {
+  margin: 17px 45px 0 40px
+}
+
+.date1 span {
+  color: #8e8e8e;
+  font: 9pt Arial-Regular;
+  position: relative;
+  top: -5px;
+  margin-left: 8px
+}
+
+.feature-switches {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+
+.feature-switches a {
+  color: #fff;
+  font: 12pt QuicksandBold;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 12px 8px 11px
+}
+
+.feature-switches a:first-of-type {
+  background: #535353
+}
+
+.feature-switches a:last-of-type {
+  background: #474747;
+  margin-left: -5px
+}
