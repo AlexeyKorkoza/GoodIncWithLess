@@ -7,7 +7,7 @@ body, html {
   background: @background-main;
 }
 
-.header-switches a, .Dropdown div a {
+.header-switches a, .Dropdown div a, .search div a {
   text-decoration: @text-decoration;
   .display(block);
   .rotate;
@@ -64,7 +64,7 @@ body, html {
       bottom: -20px;
     }
 
-    &::before{
+    &::before {
       top: -20px;
     }
   }
@@ -250,7 +250,6 @@ header {
   .display(inline-block);
 
   a {
-    /*.search div a*/
     font: 8pt "QuicksandBold";
     color: white;
 
@@ -280,5 +279,82 @@ header {
     margin-left: 20px;
     position: relative;
     top: 5px;
+  }
+}
+
+.search-socials {
+  height: 102px;
+  clear: both;
+}
+
+#search,#Findy{
+  .font(9.5pt, @NexaFreeLightwebfont);
+  color: #bfbfbf;
+  margin-top: 16px;
+  border: none;
+}
+
+#search {
+  padding: 15px 0 15px 10px;
+  background: white url(../img/clock1.png) no-repeat 168px;
+  margin: 0 11px;
+  width: 185px;
+}
+
+#Findy {
+  padding: 15px 0 15px 25px;
+  background: white url(../img/map_pin1.png) no-repeat 10px;
+  width: 45px;
+}
+
+.search {
+  float: left;
+  margin-bottom: 10px;
+
+  div {
+    background: #8f8f8f;
+    margin-top: 16px;
+    padding: 0 10px;
+    float: right;
+    height: 46px;
+
+    a {
+      &:extend(.Dropdown div a);
+      &:first-of-type {
+        margin-top: 12px;
+      }
+
+      &:last-of-type {
+        margin-top: -5px;
+      }
+    }
+  }
+}
+
+.socials {
+  clear: both;
+  margin-left: 10px;
+
+  ul {
+    li {
+      list-style-type: none;
+      .display(inline-block);
+      margin-right: 10px;
+      img {
+        position: relative;
+        top: 1px;
+      }
+
+      a {
+        color: #bfbfbf;
+        font: 10pt "NexaFreeBoldwebfont";
+        text-decoration: @text-decoration;
+        margin-left: 5px;
+      }
+
+      &:last-of-type:extend, &:nth-of-type(3), &:nth-of-type(2) {
+        margin-left: 22px;
+      }
+    }
   }
 }

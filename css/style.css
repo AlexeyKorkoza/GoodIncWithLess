@@ -4,7 +4,7 @@ body, html {
   background: #ebebeb
 }
 
-.Dropdown div a, .header-switches a {
+.Dropdown div a, .header-switches a, .search div a {
   text-decoration: none;
   display: block;
   -webkit-transform: rotate(90deg);
@@ -70,8 +70,8 @@ body, html {
 }
 
 .c-hamburger--rot span {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s
 }
 
 .c-hamburger--rot.is-active span {
@@ -231,7 +231,7 @@ header {
   display: inline-block
 }
 
-.Dropdown div a {
+.Dropdown div a, .search div a {
   font: 8pt QuicksandBold;
   color: #fff
 }
@@ -263,4 +263,77 @@ header {
   margin-left: 20px;
   position: relative;
   top: 5px
+}
+
+.search-socials {
+  height: 102px;
+  clear: both
+}
+
+#Findy, #search {
+  font: 9.5pt NexaFreeLightwebfont;
+  color: #bfbfbf;
+  margin-top: 16px;
+  border: none
+}
+
+#search {
+  padding: 15px 0 15px 10px;
+  background: url(../img/clock1.png) 168px no-repeat #fff;
+  margin: 0 11px;
+  width: 185px
+}
+
+#Findy {
+  padding: 15px 0 15px 25px;
+  background: url(../img/map_pin1.png) 10px no-repeat #fff;
+  width: 45px
+}
+
+.search {
+  float: left;
+  margin-bottom: 10px
+}
+
+.search div {
+  background: #8f8f8f;
+  margin-top: 16px;
+  padding: 0 10px;
+  float: right;
+  height: 46px
+}
+
+.search div a:first-of-type {
+  margin-top: 12px
+}
+
+.search div a:last-of-type {
+  margin-top: -5px
+}
+
+.socials {
+  clear: both;
+  margin-left: 10px
+}
+
+.socials ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px
+}
+
+.socials ul li img {
+  position: relative;
+  top: 1px
+}
+
+.socials ul li a {
+  color: #bfbfbf;
+  font: 10pt NexaFreeBoldwebfont;
+  text-decoration: none;
+  margin-left: 5px
+}
+
+.socials ul li:last-of-type:extend, .socials ul li:nth-of-type(2), .socials ul li:nth-of-type(3) {
+  margin-left: 22px
 }
