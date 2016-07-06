@@ -469,3 +469,149 @@ header {
    }
  }
 }
+
+.all-slider {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+  height: 379px;
+  clear: both;
+}
+
+.slider {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  height: 393px;
+  margin-left: 10px;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  float: left;
+  list-style: none;
+  width: 300px;
+  height: 379px;
+  margin-right: 20px;
+}
+
+.left_part, .center_part, .right_part {
+  float: left;
+  height: 379px;
+  background: white;
+  width: 300px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.prev_slide {
+  position: absolute;
+  top: 22%;
+  .display();
+  left: -6px;
+
+  a{
+    color: #adadad;
+    .font(28pt, @QuicksandBold);
+    position: relative;
+    text-decoration: @text-decoration;
+  }
+}
+
+.next_slide {
+  &:extend(.prev_slide);
+  left:0;
+  right: 0;
+
+  a{
+    &:extend(.prev_slide a);
+  }
+}
+
+.center_part {
+  margin: 15px 0 0 0;
+}
+
+#triangle-topright {
+  width: 0;
+  height: 0;
+  .border-top(77px, solid, #373737);
+  .border-left(77px, solid, transparent);
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  a {
+    text-decoration: @text-decoration;
+    position: absolute;
+    top: -64px;
+    left: -31px;
+    .font(20pt, @Arial-Regular);
+    color: white;
+  }
+
+  &:hover {
+    .border-top(75px, solid, #f26c4f);
+  }
+}
+
+.left_part{
+
+  h2{
+    .font(19pt,@NexaFreeBoldwebfont);
+    color: #4f4f4f;
+    margin: 20px 22px 5px 26px;
+  }
+
+  p{
+    .font(9.5pt,@Arial-Regular);
+    color: #7e7e7e;
+    margin: 0 22px 0 26px;
+    line-height: 25px;
+  }
+}
+
+.left_part div{
+  height: 190px;
+  width: 300px;
+  background: url(../img/left-slider.png) no-repeat;
+}
+
+.center_part {
+
+ h2{
+    &:extend(.left_part h2);
+  }
+
+  p{
+    &:extend(.left_part p);
+  }
+}
+
+.center_part div {
+  &:extend(.left_part div);
+  background: url(../img/center-slider.png) no-repeat;
+}
+
+.right_part {
+
+  h2{
+    &:extend(.left_part h2);
+  }
+
+  p{
+    &:extend(.left_part p);
+  }
+}
+
+.right_part div {
+  &:extend(.left_part div);
+  background: url(../img/right-slider.png) no-repeat;
+}
