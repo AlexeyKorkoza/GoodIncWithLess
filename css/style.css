@@ -4,9 +4,77 @@ body, html {
   background: #ebebeb
 }
 
-.header-switches a {
+.Dropdown div a, .header-switches a {
   text-decoration: none;
   display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+
+#bottom-nav, #top-nav {
+  display: none
+}
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 54px;
+  font-size: 0;
+  text-indent: -9999px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background .3s;
+  transition: background .3s
+}
+
+.c-hamburger:focus {
+  outline: 0
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: #fff
+}
+
+.c-hamburger span::after, .c-hamburger span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: ""
+}
+
+.c-hamburger span::after {
+  bottom: -20px
+}
+
+.c-hamburger span::before {
+  top: -20px
+}
+
+.c-hamburger--rot {
+  background: #474747
+}
+
+.c-hamburger--rot span {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s
+}
+
+.c-hamburger--rot.is-active span {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg)
 }
@@ -97,4 +165,102 @@ header {
 
 .header-switches a:last-of-type {
   margin-top: -5px
+}
+
+.bottom-header {
+  background: #474747;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  position: relative
+}
+
+.bottom-header-content {
+  height: auto;
+  overflow: hidden;
+  padding-top: 5px
+}
+
+.top-nav {
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1
+}
+
+.top-nav div {
+  background: #474747;
+  display: block;
+  padding: 5px 0 15px
+}
+
+.top-nav div a {
+  text-decoration: none;
+  font: 9pt NexaFreeBoldwebfont;
+  color: #fff;
+  text-align: left;
+  margin-left: 15px
+}
+
+.top-nav div img {
+  position: relative;
+  top: 5px
+}
+
+.Dropdown-Quicklinks {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px
+}
+
+.Dropdown {
+  padding-top: 5px;
+  float: right;
+  margin-right: 3px
+}
+
+.Dropdown span {
+  margin-right: 5px;
+  font: 9.5pt NexaBold;
+  color: #fff
+}
+
+.Dropdown div, .Dropdown span {
+  display: inline-block
+}
+
+.Dropdown div a {
+  font: 8pt QuicksandBold;
+  color: #fff
+}
+
+.Dropdown div a:last-of-type {
+  margin-top: -5px
+}
+
+.Dropdown div a:first-of-type {
+  margin-top: -4px
+}
+
+.Quicklinks {
+  clear: both;
+  float: right
+}
+
+.Quicklinks span {
+  font: 9.5pt NexaBold;
+  color: #fff
+}
+
+.Quicklinks a {
+  margin-left: 2px;
+  text-decoration: none
+}
+
+.Quicklinks img {
+  margin-left: 20px;
+  position: relative;
+  top: 5px
 }

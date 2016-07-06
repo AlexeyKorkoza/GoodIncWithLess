@@ -7,12 +7,88 @@ body, html {
   background: @background-main;
 }
 
-.header-switches a {
+.header-switches a, .Dropdown div a {
   text-decoration: @text-decoration;
   .display(block);
   .rotate;
 }
 
+#top-nav, #bottom-nav {
+  .display();
+}
+
+/* hamburger start css
+=========================== */
+.c-hamburger {
+  .display(block);
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 54px;
+  font-size: 0;
+  text-indent: -9999px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  .transition;
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    .display(block);
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: white;
+
+    &::before {
+      position: absolute;
+      .display(block);
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: #fff;
+      content: "";
+    }
+
+    &::after {
+      &:extend(.c-hamburger span::before);
+      bottom: -20px;
+    }
+
+    &::before{
+      top: -20px;
+    }
+  }
+}
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+.c-hamburger--rot {
+  background: #474747;
+
+  span {
+    .transition;
+  }
+}
+
+.c-hamburger--rot.is-active span {
+  .rotate;
+}
+
+/* header start css
+=========================== */
 header {
   height: auto;
   overflow: hidden;
@@ -103,5 +179,104 @@ header {
     &:last-of-type {
       margin-top: -5px;
     }
+  }
+}
+
+/* bottom-header start css
+=========================== */
+
+.bottom-header {
+  background: #474747;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.bottom-header-content {
+  height: auto;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.top-nav {
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+  z-index: 1;
+  div {
+    background: #474747;
+    .display(block);
+    padding: 5px 0 15px 0;
+    a {
+      text-decoration: @text-decoration;
+      font: 9pt "NexaFreeBoldwebfont";
+      color: white;
+      text-align: left;
+      margin-left: 15px;
+    }
+
+    img {
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+
+.Dropdown-Quicklinks {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+}
+
+.Dropdown {
+  padding-top: 5px;
+  float: right;
+  margin-right: 3px;
+}
+
+.Dropdown span {
+  &:extend(.Dropdown div);
+  margin-right: 5px;
+  font: 9.5pt "NexaBold";
+  color: white;
+}
+
+.Dropdown div {
+  .display(inline-block);
+
+  a {
+    /*.search div a*/
+    font: 8pt "QuicksandBold";
+    color: white;
+
+    &:last-of-type {
+      margin-top: -5px;
+    }
+
+    &:first-of-type {
+      margin-top: -4px;
+    }
+  }
+}
+
+.Quicklinks {
+  clear: both;
+  float: right;
+  span {
+    font: 9.5pt "NexaBold";
+    color: white;
+  }
+  a {
+    margin-left: 2px;
+    text-decoration: @text-decoration;
+  }
+
+  img {
+    margin-left: 20px;
+    position: relative;
+    top: 5px;
   }
 }
