@@ -334,7 +334,7 @@ header {
   margin-left: 5px
 }
 
-.socials ul li:last-of-type:extend, .socials ul li:nth-of-type(2), .socials ul li:nth-of-type(3) {
+.socials ul li:last-of-type, .socials ul li:nth-of-type(2), .socials ul li:nth-of-type(3) {
   margin-left: 22px
 }
 
