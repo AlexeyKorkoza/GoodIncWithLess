@@ -1102,3 +1102,85 @@ main {
   position: relative;
   top: -35px
 }
+
+footer {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #373737;
+  position: relative
+}
+
+.footer-nav-logo {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  background: #474747;
+  width: 100%
+}
+
+.footer-nav-logo p {
+  font: 14pt NexaFreeLightwebfont;
+  color: #fff;
+  position: relative;
+  top: 22px;
+  width: 60%
+}
+
+.button-hamburger {
+  float: right;
+  margin-top: -15px
+}
+
+.bottom-nav {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1
+}
+
+.bottom-nav div {
+  display: block;
+  background: #474747;
+  padding: 5px 0 15px
+}
+
+.bottom-nav div a {
+  text-decoration: none;
+  font: 9pt NexaFreeBoldwebfont;
+  color: #fff;
+  margin-left: 15px;
+  text-align: left
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #fff;
+  font: 10pt HelveticaRegular;
+  display: inline-block
+}
+
+.footer-content {
+  height: 355px;
+  padding: 48px 0 0 10px
+}
+
+.footer-content p {
+  font: 9pt HelveticaRegular;
+  color: #717171;
+  width: 80%;
+  line-height: 20px
+}
+
+.footer-content nav {
+  margin-bottom: 19px
+}
+
+.footer-content nav li {
+  list-style-type: none;
+  display: block
+}
+
+.footer-content nav a:first-of-type {
+  margin-right: 16px
+}
