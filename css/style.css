@@ -4,7 +4,7 @@ body, html {
   background: #ebebeb
 }
 
-.Dropdown div a, .header-switches a, .search div a {
+.Dropdown div a, .FilterBar-switches a, .header-switches a, .search div a {
   text-decoration: none;
   display: block;
   -webkit-transform: rotate(90deg);
@@ -562,4 +562,543 @@ header {
 
 .right_part div {
   background: url(../img/right-slider.png) no-repeat
+}
+
+main {
+  clear: both;
+  margin-top: 15px;
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 2px
+}
+
+.content_lists {
+  float: left;
+  width: 100%;
+  margin: 20px 10px 0 0
+}
+
+.first_content_list {
+  border-left: 5px solid #f26c4f;
+  padding: 33px 30px 39px 35px;
+  background: #fff;
+  margin-bottom: 15px
+}
+
+.comments, .date, .votes {
+  font: 8pt NexaFreeLightwebfont;
+  color: #adadad;
+  margin: 0 0 10px;
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px
+}
+
+.date {
+  padding-right: 32px
+}
+
+.comments {
+  padding: 0 20px 0 26px;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf
+}
+
+.votes {
+  padding-left: 20px
+}
+
+.votes span {
+  background: url(../img/star.png) repeat-x;
+  padding-left: 53px;
+  margin-right: 15px;
+  position: relative;
+  top: -2px
+}
+
+.first_content_list h2, .second_content_list h2, .third_content_list {
+  font: 18pt NexaFreeBoldwebfont
+}
+
+.first_content_list p, .second_content_list p {
+  font: 10pt NexaFreeBoldwebfont;
+  line-height: 20px;
+  clear: both
+}
+
+.first_content_list h2, .third_content_list {
+  color: #474747
+}
+
+.first_content_list p {
+  color: #969696
+}
+
+.second_content_list {
+  border-left: 5px solid #ce4e32;
+  padding: 30px 35px 35px;
+  background: #f26c4f;
+  margin-bottom: 15px
+}
+
+.second_content_list .votes span {
+  background: url(../img/active_star.png) repeat-x;
+  padding-left: 45px;
+  margin-right: 30px
+}
+
+.second_content_list .comments, .second_content_list .date, .second_content_list .votes {
+  margin-top: 5px
+}
+
+.second_content_list .comments {
+  padding-right: 15px
+}
+
+.second_content_list .comments, .second_content_list .date, .second_content_list .votes, .second_content_list h2, .second_content_list p {
+  color: #fff
+}
+
+.fifth_content_list, .fourth_content_list, .seventh_content_list, .sixth_content_list, .third_content_list {
+  background: #fff;
+  margin-bottom: 7px;
+  padding: 15px 60px 40px 35px
+}
+
+.third_content_list {
+  padding: 20px 60px 45px 35px
+}
+
+.fifth_content_list span, .fourth_content_list span, .seventh_content_list span, .sixth_content_list span, .third_content_list span {
+  margin-top: 6px
+}
+
+.fifth_content_list .date, .fourth_content_list .date, .seventh_content_list .date, .sixth_content_list .date, .third_content_list .date {
+  padding-right: 15px
+}
+
+.fifth_content_list .comments, .fourth_content_list .comments, .seventh_content_list .comments, .sixth_content_list .comments, .third_content_list .comments {
+  padding: 0 15px
+}
+
+.fourth_content_list, .third_content_list {
+  border-left: 5px solid #8f8f8f
+}
+
+.fifth_content_list h2, .fourth_content_list h2, .seventh_content_list h2, .sixth_content_list h2 {
+  font: 13pt NexaFreeBoldwebfont;
+  color: #4f4f4f
+}
+
+.fifth_content_list, .seventh_content_list, .sixth_content_list {
+  border-left: 5px solid #d9d9d9
+}
+
+.seventh_content_list {
+  margin-bottom: 22px
+}
+
+.ReadMore {
+  font: 11pt NexaHeavy;
+  color: #bdbdbd;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+  left: -2px
+}
+
+.ReadMore a {
+  display: block;
+  margin: 10px auto 0;
+  text-decoration: none
+}
+
+.FilterBar {
+  background: #fff;
+  width: 100%;
+  padding: 6px 0 14px
+}
+
+.SearchWork {
+  margin-left: 30px;
+  color: #bababa
+}
+
+.SearchWork img {
+  margin: 0 13px 0 10px;
+  position: relative;
+  top: 3px
+}
+
+.FilterBar-switches, .SearchWork, .WebsiteDesign {
+  display: inline-block
+}
+
+.SearchWork, .WebsiteDesign {
+  font: 9pt NexaFreeBoldwebfont
+}
+
+.FilterBar-switches a, .WebsiteDesign {
+  color: #f26c4f
+}
+
+.WebsiteDesign {
+  padding: 0 20px;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb
+}
+
+.FilterBar-switches {
+  font: 8pt QuicksandBold;
+  padding: 0 7px;
+  border-right: 1px solid #ebebeb;
+  height: 17px;
+  position: relative;
+  top: 12px
+}
+
+.FilterBar-switches a:last-of-type {
+  position: relative;
+  top: -7px
+}
+
+.Post1 {
+  width: 100%;
+  margin: 27px 0 15px;
+  height: auto;
+  overflow: hidden
+}
+
+.Post1-top-plus, .Post3-plus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #cacaca;
+  padding: 0 8px;
+  height: 30px
+}
+
+.Post1-top-plus a, .Post3-plus a {
+  color: #fff;
+  font: 20pt NexaFreeLightwebfont;
+  text-decoration: none
+}
+
+.Post1-top {
+  background: #fff;
+  position: relative;
+  padding: 30px 7px 0 50px
+}
+
+.Post1-top h2 {
+  color: #707070;
+  font: 20pt NexaFreeBoldwebfont
+}
+
+.Post1-top p:first-of-type {
+  font: 10pt NexaFreeBoldwebfont;
+  line-height: 22px;
+  color: #969696;
+  margin-top: 25px
+}
+
+.Post1-top p:last-of-type {
+  font: 8.75pt NexaFreeBoldwebfont;
+  line-height: 22px;
+  padding-bottom: 35px;
+  color: #707070;
+  margin: 35px 25px 0 0
+}
+
+.Post1-top p span {
+  color: #f26c4f
+}
+
+.Post1-bottom {
+  background: #efefef;
+  padding: 10px 0 40px;
+  margin-top: 3px
+}
+
+.Post1-bottom-left, .Post1-bottom-right {
+  font: 9pt NexaFreeBoldwebfont;
+  color: #b7b7b7
+}
+
+.Post1-bottom-left {
+  margin-left: 25px;
+  float: left
+}
+
+.Post1-bottom-right {
+  margin-right: 23px;
+  float: right
+}
+
+.Post1-bottom-right img {
+  margin-left: 5px
+}
+
+.Post2 {
+  background: #fff;
+  width: 100%;
+  height: 650px;
+  margin-bottom: 15px
+}
+
+.Post2-image {
+  background: url(../img/second_post.png) no-repeat;
+  width: 100%;
+  height: 305px;
+  position: relative
+}
+
+.Post2-switches {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+
+.Post2-switches a {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  height: 30px;
+  padding: 0 10px
+}
+
+.Post2-switches a:first-of-type {
+  background: #363339;
+  font: 13pt QuicksandBold;
+  margin-right: -5px
+}
+
+.Post2-switches a:last-of-type {
+  font: 13pt QuicksandBold;
+  background: #f26c4f
+}
+
+.Post2-bottom {
+  padding: 35px 30px 60px 50px
+}
+
+.Post2-bottom h2 {
+  font: 16pt NexaFreeBoldwebfont;
+  color: #707070;
+  line-height: 35px
+}
+
+.Post2-bottom p {
+  color: #b1b1b1;
+  font: 10.5pt NexaFreeBoldwebfont;
+  margin-top: 10px;
+  line-height: 25px
+}
+
+.Post3 h2, .Post3 p:first-of-type, .Post3 p:last-of-type, .Post3 p:nth-last-of-type(2) {
+  margin: 0 40px 0 50px
+}
+
+.Post3 {
+  width: 100%;
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 55px 0 25px;
+  margin-bottom: 53px
+}
+
+.Post3 h2 {
+  font: 20pt NexaFreeBoldwebfont;
+  color: #707070
+}
+
+.Post3 p:first-of-type {
+  margin-top: 20px;
+  font: 9.5pt NexaFreeBoldwebfont;
+  line-height: 25px;
+  color: #b1b1b1;
+  width: 85.5%
+}
+
+.Post3 p:last-of-type, .Post3 p:nth-of-type(2) {
+  margin-top: 30px;
+  font: 8.75pt NexaFreeLightwebfont;
+  color: #949494;
+  line-height: 20px
+}
+
+.content-right {
+  width: 100%;
+  margin-top: 20px;
+  clear: both
+}
+
+.side-feature-top {
+  height: 290px;
+  width: 100%;
+  background: url(../img/second_post.png) 65% 50% no-repeat;
+  position: relative
+}
+
+.side-feature-bottom {
+  background: #373737;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0 50px;
+  color: #fff;
+  margin-bottom: 35px
+}
+
+.side-feature-bottom h2 {
+  font: 19pt NexaFreeBoldwebfont;
+  margin: 10px 0 10px 25px
+}
+
+.side-feature-bottom p {
+  font: 9pt Arial-Regular;
+  margin: 0 30px 0 25px;
+  line-height: 23px
+}
+
+.recent-posts {
+  height: auto;
+  margin: -5px 0 15px;
+  overflow: hidden
+}
+
+.recent-posts h2 {
+  color: #474747;
+  font: 14pt NexaFreeLightwebfont
+}
+
+.recent-posts p {
+  color: #c8c8c8;
+  font: 9pt Arial-Regular;
+  line-height: 22px;
+  margin-top: 10px
+}
+
+.recent-post-date {
+  clear: both;
+  margin: 2px 0 5px
+}
+
+.recent-post-date span:first-of-type a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font: 28pt NexaFreeLightwebfont;
+  margin-right: 6px
+}
+
+.recent-post-date span:last-of-type {
+  color: #9c9c9c;
+  font: 10pt NexaFreeLightwebfont;
+  font-style: italic;
+  position: relative;
+  top: -8px
+}
+
+.recent-post1 {
+  border-bottom: 1px solid #d9d9d9
+}
+
+.recent-post1, .recent-post2 {
+  margin-left: 15px
+}
+
+.recent-post2 {
+  margin-top: 27px
+}
+
+.recent-posts-or-pages {
+  margin: 0 15px 35px
+}
+
+.recent-posts-or-pages a {
+  text-decoration: none;
+  color: #474747;
+  border-left: 4px solid #cacaca;
+  background: #fff;
+  font: 12pt NexaFreeBoldwebfont;
+  padding: 10px 0 10px 20px;
+  margin-bottom: 10px;
+  display: block
+}
+
+.recent-posts-or-pages a span {
+  margin-left: 5px;
+  font: 10pt Arial-Regular;
+  color: silver
+}
+
+.stats {
+  height: 100px;
+  width: 100%;
+  margin-left: 5px
+}
+
+.stats ul {
+  float: left
+}
+
+.stats ul li {
+  list-style-type: none
+}
+
+.stats-numbers {
+  width: 30%;
+  margin: 0 55px 0 10px
+}
+
+.stats-numbers li {
+  color: #474747;
+  font: 33pt NexaHeavy
+}
+
+.stats-numbers li:last-of-type {
+  margin-top: -10px
+}
+
+.stats-images {
+  width: 15%;
+  margin: 20px 0 0
+}
+
+.stats-images li {
+  margin-top: 40px
+}
+
+.stats-images li:last-of-type {
+  font: 20pt NexaHeavy;
+  color: #9d9d9d
+}
+
+.stats-text {
+  margin-top: 20px
+}
+
+.stats-text li {
+  font: 9.5pt NexaFreeLightwebfont;
+  color: #878787;
+  margin-top: 50px
+}
+
+.stats-images li:first-of-type, .stats-text li:first-of-type {
+  margin: 0
+}
+
+.stats-images li:nth-of-type(3), .stats-text li:nth-of-type(3) {
+  position: relative;
+  top: -15px
+}
+
+.stats-images li:last-of-type, .stats-text li:last-of-type {
+  position: relative;
+  top: -35px
 }
