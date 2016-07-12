@@ -1,0 +1,483 @@
+@media (min-width: 981px) {
+  .bottom-header, .feature, .footer, .search-socials, .top-header-logo-inputs, main {
+    margin: 0 auto;
+    width: 940px
+  }
+
+  #bottom-nav, #top-nav, .next_slide, .prev_slide {
+    display: block
+  }
+
+  .bottom-header-content, .bottom-nav div a, .top-nav div a {
+    padding-bottom: 23px
+  }
+
+  .logo {
+    margin-left: 0
+  }
+
+  header {
+    background: #373737;
+    height: 63px
+  }
+
+  .Portfolio, .bottom-nav div a:hover, .top-nav div a:hover {
+    border-bottom: 5px solid #f26c4f
+  }
+
+  .bottom-nav {
+    width: 50%;
+    position: absolute;
+    bottom: 40%;
+    right: -5%
+  }
+
+  .bottom-nav div {
+    display: inline-block;
+    border-left: 1px solid #767676;
+    margin-top: 5px;
+    padding: 0 16px 0 5px
+  }
+
+  .bottom-nav div:first-of-type, .top-nav div:first-of-type, .top-nav div:nth-of-type(2) {
+    border: none
+  }
+
+  .top-nav {
+    width: 55%
+  }
+
+  .top-nav div {
+    display: inline-block;
+    border-left: 1px solid #767676;
+    margin-top: 5px;
+    padding: 0 16px 0 5px
+  }
+
+  .top-nav img {
+    padding: 0 5px 0 15px
+  }
+
+  .contact-letter {
+    float: right;
+    margin-top: -25px;
+    clear: none
+  }
+
+  #contact {
+    width: 70px;
+    margin-left: 9px
+  }
+
+  #letter {
+    width: 104px
+  }
+
+  .Dropdown, .Quicklinks {
+    display: inline-block;
+    border-right: 1px solid #767676;
+    padding-right: 15px
+  }
+
+  .Dropdown-Quicklinks {
+    position: absolute;
+    top: 30%;
+    margin-right: -3px
+  }
+
+  .Quicklinks {
+    clear: none;
+    margin: -3px 20px 0 0
+  }
+
+  .Quicklinks img {
+    margin-left: 5px
+  }
+
+  .Dropdown {
+    margin: -3px 0 0
+  }
+
+  .c-hamburger {
+    display: none
+  }
+
+  #search {
+    padding: 15px 0 15px 15px;
+    background-position: 260px;
+    margin: 0 11px 0 0;
+    width: 285px
+  }
+
+  .search div {
+    padding: 0 19px
+  }
+
+  #Findy {
+    padding: 15px 0 15px 35px;
+    background-position: 10px;
+    width: 57px
+  }
+
+  .search-socials {
+    position: relative
+  }
+
+  .socials {
+    position: absolute;
+    top: 30%;
+    right: 0
+  }
+
+  .feature {
+    margin-top: -30px
+  }
+
+  .feature-image, .feature-text {
+    display: inline-block
+  }
+
+  .feature-image {
+    width: 67%
+  }
+
+  .feature-image div {
+    bottom: -5px;
+    padding-right: 97px
+  }
+
+  .feature-text {
+    width: 31.92%;
+    float: right;
+    height: 360px
+  }
+
+  .all-slider {
+    width: 960px;
+    margin-bottom: 10px
+  }
+
+  .prev_slide {
+    top: 21.5%;
+    left: -40px
+  }
+
+  .next_slide {
+    right: -40px
+  }
+
+  .content_lists {
+    width: 66%
+  }
+
+  .Post2 {
+    height: 615px
+  }
+
+  .Post3 {
+    padding: 55px 0 47px
+  }
+
+  .content-right {
+    width: 32.85%;
+    float: left;
+    clear: none
+  }
+
+  .recent-post1, .recent-post2 {
+    margin-left: 25px
+  }
+
+  .recent-posts-or-pages {
+    margin: -7px 15px 35px 12px
+  }
+
+  .recent-posts-or-pages a {
+    width: 100%
+  }
+
+  .stats {
+    margin-left: 20px
+  }
+
+  .stats-numbers {
+    margin-right: 40px
+  }
+
+  footer {
+    background: #373737
+  }
+
+  .footer-content {
+    padding-left: 0
+  }
+
+  .footer-content nav li {
+    display: inline-block
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  #bottom-nav, #top-nav, .next_slide, .prev_slide {
+    display: block
+  }
+
+  .contact-letter {
+    float: right;
+    margin: -20px 5px 0 0;
+    clear: none
+  }
+
+  #contact {
+    width: 110px
+  }
+
+  #letter {
+    width: 120px
+  }
+
+  #search {
+    padding: 15px 0 15px 15px;
+    background-position: 200px;
+    margin: 0 11px;
+    width: 225px
+  }
+
+  #Findy {
+    padding: 15px 0 15px 25px;
+    background-position: 10px;
+    width: 85px
+  }
+
+  .letter {
+    margin-right: 10px
+  }
+
+  .c-hamburger {
+    display: none
+  }
+
+  .bottom-header-content, .bottom-nav div a, .top-nav div a {
+    padding-bottom: 23px
+  }
+
+  .Portfolio, .bottom-nav div a:hover, .top-nav div a:hover {
+    border-bottom: 5px solid #f26c3f
+  }
+
+  .bottom-nav {
+    width: 65%;
+    position: absolute;
+    bottom: 40%;
+    right: -5%
+  }
+
+  .bottom-nav div {
+    display: inline-block;
+    border-left: 1px solid #767676;
+    margin-top: 5px;
+    padding: 0 16px 0 5px
+  }
+
+  .bottom-nav div:first-of-type, .top-nav div:first-of-type, .top-nav div:nth-of-type(2) {
+    border: none
+  }
+
+  .top-nav {
+    width: 70%
+  }
+
+  .top-nav div {
+    display: inline-block;
+    border-left: 1px solid #767676;
+    margin-top: 5px;
+    padding: 0 16px 0 5px
+  }
+
+  .top-nav img {
+    padding: 0 5px 0 15px
+  }
+
+  .search-socials {
+    position: relative
+  }
+
+  .socials {
+    position: absolute;
+    top: 30%;
+    right: 10px
+  }
+
+  .feature {
+    margin-top: -30px
+  }
+
+  .feature-image, .feature-text {
+    float: left
+  }
+
+  .feature-image {
+    width: 63.7%
+  }
+
+  .feature-image div {
+    bottom: -5px
+  }
+
+  .feature-text {
+    width: 35%;
+    float: right;
+    height: 360px
+  }
+
+  .slider {
+    margin-left: 0
+  }
+
+  .all-slider {
+    width: 640px
+  }
+
+  .prev_slide {
+    left: -35px
+  }
+
+  .next_slide {
+    right: -20px
+  }
+
+  .content_lists {
+    width: 67.5%
+  }
+
+  .footer-content nav li {
+    display: inline-block
+  }
+
+  .content-right {
+    width: 30%;
+    float: left;
+    clear: none
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .contact-letter {
+    float: right;
+    margin: -20px 5px 0 0;
+    clear: none
+  }
+
+  #contact {
+    width: 80px
+  }
+
+  #letter {
+    width: 100px
+  }
+
+  #search {
+    padding: 15px 0 15px 15px;
+    background-position: 200px;
+    margin: 0 11px;
+    width: 225px
+  }
+
+  #Findy {
+    padding: 15px 0 15px 25px;
+    background-position: 10px;
+    width: 85px
+  }
+
+  .feature-text {
+    width: 100%;
+    height: 360px
+  }
+
+  .triangle-right1 {
+    top: -5px
+  }
+
+  .feature-image {
+    width: 80%;
+    margin: 0 auto
+  }
+
+  .feature-image div {
+    bottom: -5px
+  }
+
+  .feature-text h2 {
+    margin: 0 25px 0 30px
+  }
+
+  .feature-text p {
+    margin: 20px 25px 0 30px
+  }
+
+  .plus {
+    margin: 0 5px 0 25px
+  }
+
+  .date1 {
+    margin: 17px 25px 0 40px
+  }
+
+  .FilterBar, .Post1, .Post2, .Post3, .recent-posts, .recent-posts-or-pages, .side-feature, .stats {
+    width: 80%;
+    margin: 0 auto
+  }
+
+  .Post1, .Post2, .Post3, .side-feature {
+    width: 80%;
+    margin: 10px auto 15px
+  }
+
+  .next_slide, .prev_slide {
+    display: block
+  }
+
+  .prev_slide {
+    left: -35px;
+    top: 21%
+  }
+
+  .next_slide {
+    right: -30px
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .Post2 {
+    height: 580px
+  }
+
+  .feature-text {
+    width: 100%
+  }
+
+  .all-slider {
+    margin: 0;
+    width: 100%
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .Dropdown-Quicklinks {
+    width: 55%
+  }
+
+  .feature-text {
+    width: 100%;
+    height: 275px
+  }
+
+  .Post2 {
+    height: 600px
+  }
+
+  .all-slider {
+    margin: 0;
+    width: 100%
+  }
+}
