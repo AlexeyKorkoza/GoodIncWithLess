@@ -494,8 +494,7 @@ header {
 .next_slide, .prev_slide {
   position: absolute;
   top: 22%;
-  display: none;
-  left: -6px
+  display: none
 }
 
 .next_slide a, .prev_slide a {
@@ -505,8 +504,11 @@ header {
   text-decoration: none
 }
 
-.next_slide {
-  left: 0;
+#prev_slide {
+  left: -6px
+}
+
+#next_slide {
   right: 0
 }
 

@@ -516,7 +516,6 @@ header {
   position: absolute;
   top: 22%;
   .display();
-  left: -6px;
 
   a {
     color: #adadad;
@@ -528,12 +527,18 @@ header {
 
 .next_slide {
   &:extend(.prev_slide);
-  left: 0;
-  right: 0;
 
   a {
     &:extend(.prev_slide a);
   }
+}
+
+#prev_slide{
+  left:-6px;
+}
+
+#next_slide{
+  right: 0;
 }
 
 .center_part {
